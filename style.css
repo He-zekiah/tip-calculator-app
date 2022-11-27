@@ -59,7 +59,9 @@
 .errors {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+    margin-bottom: 5px;
 }
 
 .form {
@@ -69,9 +71,7 @@
 small {
     text-align: right;
     color: hsl(0, 100%, 74%);
-    margin-bottom: 5px;
     font-size: 12px;
-    margin-top: 15px;
 }
 
 input::-webkit-outer-spin-button,
@@ -81,17 +81,6 @@ input::-webkit-inner-spin-button {
     display: none;
 }
 
-.success {
-    outline: 2px solid hsl(183, 100%, 15%);
-}
-
-.error {
-    outline: 2px solid hsl(0, 100%, 74%);
-}
-
-.detail:focus {
-    outline: 3px solid hsl(187, 87%, 66%);
-}
 
 .detail {
     width: 100%;
@@ -126,6 +115,22 @@ input::-webkit-inner-spin-button {
     text-align: right;
     font-size: 20px;
     font-weight: bold;
+}
+
+.success {
+    outline: 2px solid hsl(183, 100%, 15%);
+}
+
+.error {
+    outline: 2px solid hsl(0, 100%, 74%);
+}
+
+.detail:focus {
+    outline: 3px solid hsl(187, 87%, 66%);
+}
+
+.details:focus {
+    outline: 3px solid hsl(187, 87%, 66%);
 }
 
 .bill2 {
@@ -251,7 +256,7 @@ input::-webkit-inner-spin-button {
     .content {
         height: auto;
         flex-direction: column;
-        width: 400px;
+        width: 100%;
         border-radius: 30px;
     }
 
